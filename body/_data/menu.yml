@@ -1,0 +1,50 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  # - title: Accueil
+  #   entries:
+  #     - title:
+  #     - title: github repo
+  #       url: https://github.com/riggraz/no-style-please
+  #     - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
+
+  - title: TIPE [25-26]
+    entries:
+      - title: Current Work
+        url: current
+      - title: Journal de bord
+        entries:
+        post_list:
+          limit: 5
+          category: tipe
+          show_more: false
+          show_more_text: Toutes les archives
+          show_more_url: example2-archive.html
+
+  # - title: Avancées
+  #   post_list:
+  #     limit: 100
+  #     show_more: true
+  #     show_more_text: See archive...
+  #     show_more_url: archive.html
+
+  # - title: Autre
+  #   entries:
+  #     - title: Cours
+  #   post_list:
+  #     category: cours
+  #     show_more: true
+  #     show_more_text: ＋
+  #     show_more_url: example2-archive.html
+
+  # - title: rss
+  #   url: feed.xml
+
+  # - title: another list
+  #   entries:
+  #     - title: with subitems
+  #       entries:
+  #         - title: with subsubitems
+  #         - title: example page
+  #           url: about

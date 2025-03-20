@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cosmologie Géocentriste</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Cosmologie Géocentriste">
+<meta name="author" content="Enrico">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Modèle géocentriste">
+<meta property="og:description" content="Modèle géocentriste">
+<link rel="canonical" href="http://localhost:4000/tipe-2.html">
+<meta property="og:url" content="http://localhost:4000/tipe-2.html">
+<meta property="og:site_name" content="Enrico’s Place">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-03-20T00:00:00+01:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Cosmologie Géocentriste">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Enrico"},"dateModified":"2025-03-20T00:00:00+01:00","datePublished":"2025-03-20T00:00:00+01:00","description":"Modèle géocentriste","headline":"Cosmologie Géocentriste","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tipe-2.html"},"url":"http://localhost:4000/tipe-2.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Enrico's Place">
+<link rel="shortcut icon" type="image/x-icon" href="/logo.png">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body a="light">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">..</a><article>
+  <p class="post-meta">
+    <time datetime="2025-03-20 00:00:00 +0100">20-03-2025</time>
+  </p>
+  
+  <h1>Cosmologie Géocentriste</h1>
+
+  <h1 id="modèle-géocentriste">Modèle géocentriste</h1>
+
+<p>HYP: Cosmos géocentriste (on s’intéresse aux 5 planètes connus de l’époque) <br>
+Modèle de Ptolémée</p>
+
+<ul>
+  <li>
+    <h2 id="approche-cinématique">Approche cinématique</h2>
+
+    <ul>
+      <li>Etudier le mvt en trajectoire épycicloïdal des planètes autour de la Terre</li>
+      <li>Expliquer le mouvement réptrograde</li>
+      <li>Approche géométrique</li>
+    </ul>
+  </li>
+  <li>
+    <h2 id="approche-mécanique">Approche mécanique</h2>
+
+    <p>Une fois qu’on a déterminé la trajectoire des astres, essayer d’appliquer le PFD et de modéliser les forces qui seraient nécessaires:</p>
+
+    <ul>
+      <li>Prendre en compte:
+        <ul>
+          <li>Force d’attraction entre 2 astres:
+$\vec{F}_{1 \rightarrow 2}=-\mathscr{G} \frac{m_1 m_2}{| | \overrightarrow{M_1 M_2} | |^2 } \overrightarrow{\mathrm{u_r}}$</li>
+          <li>Force de Corriolis</li>
+          <li>Force fictive qui explique le mouvement que la planète tourne autour d’un point fictif qui lui suit une trajectoire circulaire pour expliquer sa trajectoire epicycloidale</li>
+        </ul>
+      </li>
+      <li>
+        <p>déterminer “les forces et les masses” dans un tel modèle, (prendre des données de véritables pointages de l’époque sur les distances) -&gt; Almageste</p>
+
+        <ul>
+          <li>
+            <h2 id="approche-optique">Approche optique</h2>
+          </li>
+        </ul>
+      </li>
+      <li>Réaliser une simulation avec python ou matlab
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Cassini_apparent.jpg" alt="">
+</li>
+    </ul>
+  </li>
+  <li>Transposé à des exemples réels avec par exemple un cyclone
+<img src="https://cdn.britannica.com/36/137736-050-C05FC854/diagram-Ptolemaic-Harmonia-Macrocosmica-Andreas-Cellarius-system-1660.jpg" alt="">
+</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">750</span><span class="p">,</span> <span class="mi">750</span><span class="p">)</span>  <span class="c1"># Temps en jours
+</span><span class="n">R</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.3</span>  <span class="c1"># Rayons en UA (exemple pour Mars)
+</span><span class="n">omega1</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">687</span>  <span class="c1"># Période du déférent (Mars : 687 jours)
+</span><span class="n">omega2</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">50</span>   <span class="c1"># Période fictive de l’épicycle
+</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega1</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega2</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega1</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega2</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Trajectoire épicycloïdale de Mars"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"x (UA)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"y (UA)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>
