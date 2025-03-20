@@ -1,0 +1,70 @@
+# Ensure jekyll-spaceship is in your Gemfile
+echo "gem 'jekyll-spaceship'" >> Gemfile
+
+# Install the gem
+bundle install
+
+# Add jekyll-spaceship to your _config.yml
+echo "plugins:
+  - jekyll-spaceship" >> _config.yml
+
+# Configure jekyll-spaceship for MathJax in _config.yml
+echo "jekyll-spaceship:
+  mathjax-processor:
+    src:
+      - https://polyfill.io/v3/polyfill.min.js?features=es6
+      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    config:
+      tex:
+        inlineMath:
+          - ['$', '$']
+          - ['\\(', '\\)']
+        displayMath:
+          - ['$$', '$$']
+          - ['\\[', '\\]']
+      svg:
+        fontCache: 'global'
+    optimize:
+      enabled: true" >> _config.yml
+
+# Commit and push to your default branch (e.g., main)
+git add Gemfile _config.yml
+git commit -m "Configure jekyll-spaceship for MathJax"
+git push origin main
+
+# Create a GitHub Actions workflow to build and deploy
+mkdir -p .github/workflows
+echo "name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: \${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages" > .github/workflows/deploy.yml
+
+# Commit and push the workflow
+git add .github/workflows/deploy.yml
+git commit -m "Add GitHub Actions workflow to deploy with jekyll-spaceship"
+git push origin main
