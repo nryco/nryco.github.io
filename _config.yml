@@ -42,3 +42,5 @@ plugins:
 #   macros:
 #     - ["\\Q", "\\mathbb{Q}"]
 #     - ["\\C", "\\mathbb{C}"]
+plugins:
+- jekyll-spaceship
