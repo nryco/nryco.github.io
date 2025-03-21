@@ -43,6 +43,10 @@
 
   <h1 id="modèle-géocentriste">Modèle géocentriste</h1>
 
+<p>Problématique: Que nous permet de dire une approche mécanique moderne d’un univers géocentrique sur les cycles et boucles observés, et quelles sont les limites critiques de cette représentation ?</p>
+
+<p>Quelles hypothèses seraient nécessaire pour expliquer de tels trajectoires avec la mécanique moderne ?</p>
+
 <p>HYP: Cosmos géocentriste (on s’intéresse aux 5 planètes connus de l’époque) <br>
 Modèle de Ptolémée</p>
 
@@ -51,7 +55,7 @@ Modèle de Ptolémée</p>
     <h2 id="approche-cinématique">Approche cinématique</h2>
 
     <ul>
-      <li>Etudier le mvt en trajectoire épycicloïdal des planètes autour de la Terre</li>
+      <li>Etudier le mvt en trajectoire épycicloïdal des planètes autour de la Terre dans le référentiel géocentrique</li>
       <li>Expliquer le mouvement réptrograde</li>
       <li>Approche géométrique</li>
     </ul>
@@ -88,25 +92,6 @@ $\vec{F}_{1 \rightarrow 2}=-\mathscr{G} \frac{m_1 m_2}{| | \overrightarrow{M_1 M
 <img src="https://cdn.britannica.com/36/137736-050-C05FC854/diagram-Ptolemaic-Harmonia-Macrocosmica-Andreas-Cellarius-system-1660.jpg" alt="">
 </li>
 </ul>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">750</span><span class="p">,</span> <span class="mi">750</span><span class="p">)</span>  <span class="c1"># Temps en jours
-</span><span class="n">R</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.3</span>  <span class="c1"># Rayons en UA (exemple pour Mars)
-</span><span class="n">omega1</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">687</span>  <span class="c1"># Période du déférent (Mars : 687 jours)
-</span><span class="n">omega2</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">50</span>   <span class="c1"># Période fictive de l’épicycle
-</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega1</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega2</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">R</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega1</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega2</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Trajectoire épicycloïdale de Mars"</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"x (UA)"</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"y (UA)"</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">grid</span><span class="p">()</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div></div>
 
 </article>
       </div>
