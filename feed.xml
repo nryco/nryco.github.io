@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://riggraz.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://riggraz.dev/" rel="alternate" type="text/html" /><updated>2025-03-20T22:15:47+00:00</updated><id>https://riggraz.dev/feed.xml</id><title type="html">Enrico’s Place</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://riggraz.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://riggraz.dev/" rel="alternate" type="text/html" /><updated>2025-03-21T12:21:51+00:00</updated><id>https://riggraz.dev/feed.xml</id><title type="html">Enrico’s Place</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
 </subtitle><author><name>Enrico</name></author><entry><title type="html">Cosmologie Géocentriste</title><link href="https://riggraz.dev/tipe-2.html" rel="alternate" type="text/html" title="Cosmologie Géocentriste" /><published>2025-03-20T00:00:00+00:00</published><updated>2025-03-20T00:00:00+00:00</updated><id>https://riggraz.dev/tipe/2</id><content type="html" xml:base="https://riggraz.dev/tipe-2.html"><![CDATA[<h1 id="modèle-géocentriste">Modèle géocentriste</h1>
+
+<p>Problématique: Que nous permet de dire une approche mécanique moderne d’un univers géocentrique sur les cycles et boucles observés, et quelles sont les limites critiques de cette représentation ?</p>
+
+<p>Quelles hypothèses seraient nécessaire pour expliquer de tels trajectoires avec la mécanique moderne ?</p>
 
 <p>HYP: Cosmos géocentriste (on s’intéresse aux 5 planètes connus de l’époque) <br />
 Modèle de Ptolémée</p>
@@ -9,7 +13,7 @@ Modèle de Ptolémée</p>
     <h2 id="approche-cinématique">Approche cinématique</h2>
 
     <ul>
-      <li>Etudier le mvt en trajectoire épycicloïdal des planètes autour de la Terre</li>
+      <li>Etudier le mvt en trajectoire épycicloïdal des planètes autour de la Terre dans le référentiel géocentrique</li>
       <li>Expliquer le mouvement réptrograde</li>
       <li>Approche géométrique</li>
     </ul>
